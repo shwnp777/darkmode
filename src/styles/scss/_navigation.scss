@@ -67,15 +67,37 @@
 				}
 			}
 			.settingsIcon {
-				font-size: 1.3rem;
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				color: $Main_Yellow;
 				width: 30px;
 				height: 30px;
 				cursor: pointer;
+				svg {
+					color: $Main_Yellow;
+				}
 			}
+		}
+	}
+}
+
+.drawerBTN {
+	svg {
+		color: $Main_Yellow;
+	}
+}
+
+.userDrawer {
+	.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+		background: $Third_Grey;
+		a {
+			color: $Main_Yellow;
+			text-decoration: none;
+			width: 100%;
+		}
+		color: $Main_Yellow;
+		svg {
+			color: $Main_Yellow;
 		}
 	}
 }

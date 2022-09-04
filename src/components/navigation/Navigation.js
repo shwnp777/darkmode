@@ -1,7 +1,8 @@
 import React from 'react';
 import Logo from '../../images/logo.png';
 import ProfileIMG from '../../images/puppy.jpg';
-import { IoMdSettings } from 'react-icons/io';
+import UserDrawer from './UserDrawer';
+import SettingsIconMenu from './SettingsIconMenu';
 
 const Navigation = () => {
 	return (
@@ -9,6 +10,9 @@ const Navigation = () => {
 			<div className='leftNav'>
 				<div className='logo'>
 					<img src={Logo} alt='' />
+				</div>
+				<div className='sideBTN'>
+					<UserDrawer />
 				</div>
 			</div>
 			<div className='middleNav'></div>
@@ -18,7 +22,7 @@ const Navigation = () => {
 						<img src={ProfileIMG} alt='' />
 					</div>
 					<div className='settingsIcon'>
-						<IoMdSettings />
+						<SettingsIconMenu />
 					</div>
 				</div>
 			</div>

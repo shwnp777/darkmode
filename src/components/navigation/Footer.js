@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+	const currentYear = new Date().getFullYear();
+
 	return (
 		<div className='footer-div'>
 			<h3>Our Groups are Missing You!</h3>
@@ -17,7 +20,8 @@ const Footer = () => {
 				</div>
 			</div>
 			<p className='copyright'>
-				Copyright 2022 | All Rights Reserved www.reGROop.com
+				Copyright © {currentYear} | All Rights Reserved{' '}
+				<Link to='/'>www.reGROop.com</Link>
 			</p>
 		</div>
 	);

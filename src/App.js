@@ -1,21 +1,23 @@
 import React from 'react';
-import Footer from './components/navigation/Footer';
-import Navigation from './components/navigation/Navigation';
-import Benefits from './components/sections/Benefits';
-import HomeHeader from './components/sections/HomeHeader';
-import Meetings from './components/sections/Meetings';
+import { Routes, Route } from 'react-router-dom';
+// Layouts
+import DashboardLayout from './components/layout/DashboardLayout';
+import LandingLayout from './components/layout/LandingLayout';
+// Pages
+import Landing from './views/Landing';
+import FirstDash from './views/dashboard/FirstDash';
 
 const App = () => {
 	return (
-		<div>
-			<Navigation />
-			<div className='homeSections'>
-				<HomeHeader />
-				<Benefits />
-				<Meetings />
-				<Footer />
-			</div>
-		</div>
+		<Routes>
+			{/* Landing Page ===== User has not signed up on signed in */}
+			<Route path='/' element={<LandingLayout />}>
+				<Route index element={<Landing />} />
+			</Route>
+			<Route path='/user/dashboard' element={<DashboardLayout />}>
+				<Route index element={<FirstDash />} />
+			</Route>
+		</Routes>
 	);
 };
 
