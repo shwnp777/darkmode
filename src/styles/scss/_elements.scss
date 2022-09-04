@@ -1,0 +1,127 @@
+@import './colors';
+
+h1,
+p {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.cardBG {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	background: $Second_Grey;
+	padding: 20px;
+	border: none;
+	color: #ffffff;
+	border-radius: 15px;
+	// -webkit-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.07);
+	// -moz-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.07);
+	// box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.07);
+}
+// Delete
+
+.card {
+	height: 300px;
+	width: 300px;
+}
+
+.lightBG {
+	background: $Second_Grey;
+	padding: 10px;
+	border: none;
+	color: #ffffff;
+	border-radius: 15px;
+}
+
+.lighterBG {
+	background: $Third_Grey;
+	padding: 10px;
+	border: none;
+	color: #ffffff;
+	border-radius: 15px;
+}
+
+.blueBG {
+	background: $Main_Blue;
+	padding: 10px;
+	border: none;
+	color: #ffffff;
+	border-radius: 15px;
+}
+.pinkBG {
+	background: $Main_Pink;
+	border: none;
+	color: #ffffff;
+	border-radius: 15px;
+}
+.purpleBG {
+	background: $Main_Purple;
+	padding: 10px;
+	border: none;
+	color: #ffffff;
+	border-radius: 15px;
+}
+.greenBG {
+	background: $Main_Green;
+	padding: 10px;
+	border: none;
+	color: #ffffff;
+	border-radius: 15px;
+}
+.redBG {
+	background: $Main_Red;
+	padding: 10px;
+	border: none;
+	color: #ffffff;
+	border-radius: 15px;
+}
+.yellowBG {
+	background: $Main_Yellow;
+	padding: 10px;
+	border: none;
+	color: #ffffff;
+	border-radius: 15px;
+}
+.lighterOut {
+	border: 2px solid $Third_Grey;
+	padding: 10px;
+	color: $Third_Grey;
+	border-radius: 15px;
+}
+.blueOut {
+	border: 2px solid $Main_Blue;
+	padding: 10px;
+	color: $Main_Blue;
+	border-radius: 15px;
+}
+.pinkOut {
+	border: 2px solid $Main_Pink;
+	padding: 10px;
+	color: $Main_Pink;
+	border-radius: 15px;
+}
+.purpleOut {
+	border: 2px solid $Main_Purple;
+	padding: 10px;
+	color: $Main_Purple;
+	border-radius: 15px;
+}
+.greenOut {
+	border: 2px solid $Main_Green;
+	padding: 10px;
+	color: $Main_Green;
+	border-radius: 15px;
+}
+.redOut {
+	border: 2px solid $Main_Red;
+	padding: 10px;
+	color: $Main_Red;
+	border-radius: 15px;
+}
+.yellowOut {
+	border: 2px solid $Main_Yellow;
+	padding: 10px;
+	color: $Main_Yellow;
+	border-radius: 15px;
+}

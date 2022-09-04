@@ -1,0 +1,88 @@
+@import './colors';
+.homeSections {
+	width: 100%;
+}
+
+.benefits {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	.single {
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+		@media only screen and (min-width: 768px) {
+			width: 29%;
+		}
+	}
+	h3 {
+		color: $Main-Yellow;
+		margin-right: 20px;
+	}
+	p {
+		font-weight: 600;
+		font-size: 1.1rem;
+	}
+}
+
+.meetups {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	@media only screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+.meetup {
+	width: calc(100% - 40px);
+	border-radius: 20px;
+	overflow: hidden;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+	color: #fff;
+	padding: 20px;
+	p {
+		line-height: 1.5rem;
+	}
+	@media only screen and (min-width: 768px) {
+		width: 28%;
+	}
+}
+.meetupOne {
+	background-image: linear-gradient(
+			60deg,
+			rgba(61, 63, 79, 1) 30%,
+			rgba(61, 63, 79, 0.75) 80%,
+			rgba(61, 63, 79, 0.2315519957983193) 100%
+		),
+		url('../../images/skater.jpg');
+}
+.meetupTwo {
+	background-image: linear-gradient(
+			60deg,
+			rgba(61, 63, 79, 1) 30%,
+			rgba(61, 63, 79, 0.75) 80%,
+			rgba(61, 63, 79, 0.2315519957983193) 100%
+		),
+		url('../../images/friends.jpg');
+}
+.meetupThree {
+	background-image: linear-gradient(
+			60deg,
+			rgba(61, 63, 79, 1) 30%,
+			rgba(61, 63, 79, 0.75) 80%,
+			rgba(61, 63, 79, 0.2315519957983193) 100%
+		),
+		url('../../images/people.jpg');
+}
