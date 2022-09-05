@@ -6,7 +6,9 @@ const DashboardLayout = () => {
 	return (
 		<div>
 			<Navigation />
-			<Outlet />
+			<main className='mainUserDashDiv'>
+				<Outlet />
+			</main>
 		</div>
 	);
 };

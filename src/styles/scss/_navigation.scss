@@ -101,3 +101,15 @@
 		}
 	}
 }
+
+.logoSide {
+	width: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	padding: 20px 0;
+	img {
+		width: 70%;
+	}
+}

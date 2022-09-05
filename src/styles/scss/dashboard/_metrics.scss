@@ -1,0 +1,72 @@
+.topMetrics {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	padding: 0 20px;
+	@media only screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+		padding: 0px;
+		margin-top: 50px;
+	}
+	.metricDiv {
+		border-radius: 15px;
+		overflow: hidden;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 60px;
+		color: #fff;
+		padding: 20px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+		.percent {
+			font-weight: 700;
+			font-size: 2rem;
+		}
+		.words {
+			font-weight: 600;
+		}
+		@media only screen and (min-width: 768px) {
+			width: 250px;
+			height: 60px;
+		}
+	}
+	.metricOne {
+		background-image: linear-gradient(
+				60deg,
+				rgba(72, 178, 162, 1) 30%,
+				rgba(72, 178, 162, 0.75) 80%,
+				rgba(72, 178, 162, 0.232) 100%
+			),
+			url('../../../images/bar.jpg');
+	}
+	.metricTwo {
+		background-image: linear-gradient(
+				60deg,
+				rgba(178, 72, 157, 1) 30%,
+				rgba(178, 72, 157, 0.75) 80%,
+				rgba(178, 72, 157, 0.232) 100%
+			),
+			url('../../../images/bar.jpg');
+	}
+	.metricThree {
+		background-image: linear-gradient(
+				60deg,
+				rgb(72, 130, 178) 30%,
+				rgba(72, 130, 178, 0.75) 80%,
+				rgba(72, 130, 178, 0.232) 100%
+			),
+			url('../../../images/bar.jpg');
+	}
+}

@@ -12,6 +12,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import IconButton from '@mui/material/IconButton';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import SideLogo from '../../images/logo.png';
 
 const UserDrawer = () => {
 	const [drawerOpen, setDrawerOpen] = useState(false);
@@ -41,7 +42,7 @@ const UserDrawer = () => {
 							<ListItemIcon>
 								<InboxIcon />
 							</ListItemIcon>
-							<ListItemText primary='Mail' />
+							<ListItemText primary='Dashboard' />
 						</ListItemButton>
 					</Link>
 				</ListItem>
@@ -51,7 +52,7 @@ const UserDrawer = () => {
 							<ListItemIcon>
 								<InboxIcon />
 							</ListItemIcon>
-							<ListItemText primary='Mail' />
+							<ListItemText primary='Groups' />
 						</ListItemButton>
 					</Link>
 				</ListItem>
@@ -61,7 +62,7 @@ const UserDrawer = () => {
 							<ListItemIcon>
 								<InboxIcon />
 							</ListItemIcon>
-							<ListItemText primary='Mail' />
+							<ListItemText primary='Events' />
 						</ListItemButton>
 					</Link>
 				</ListItem>
@@ -107,6 +108,9 @@ const UserDrawer = () => {
 				open={drawerOpen}
 				onClose={toggleDrawer(false)}
 			>
+				<div className='logoSide'>
+					<img src={SideLogo} alt='' />
+				</div>
 				{list()}
 			</Drawer>
 		</Fragment>

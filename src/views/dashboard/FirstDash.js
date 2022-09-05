@@ -1,9 +1,12 @@
 import React from 'react';
+import Metrics from '../../components/dasboardSections/Metrics';
+import UserInfo from '../../components/dasboardSections/MainPage/InfoSection';
 
 const FirstDash = () => {
 	return (
 		<div>
-			<h1>This is the first view of Dashboard</h1>
+			<Metrics />
+			<UserInfo />
 		</div>
 	);
 };
