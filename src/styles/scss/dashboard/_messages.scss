@@ -1,0 +1,125 @@
+@import '../colors';
+
+.messages-div {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	border-radius: 15px;
+	background-image: linear-gradient(
+			60deg,
+			rgba(62, 65, 80, 1) 30%,
+			rgba(62, 65, 80, 0.75) 80%,
+			rgba(62, 65, 80, 0.2315519957983193) 100%
+		),
+		url('../../../images/mountains.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.people-messaged {
+		display: none;
+	}
+	.messages {
+		width: 800px;
+		height: 100%;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		.my-message {
+			align-items: flex-start;
+			.message-div {
+				background: grey;
+				width: 400px;
+				padding: 10px;
+				border-radius: 0 15px 15px 15px;
+				color: #fff;
+			}
+			.date-for-message {
+				color: rgb(188, 188, 188);
+				font-size: 12px;
+			}
+		}
+
+		.their-message {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			align-content: flex-end;
+			.message-div {
+				background: $Main_Blue;
+				width: 400px;
+				padding: 10px;
+				border-radius: 15px 0px 15px 15px;
+				color: #fff;
+			}
+			.date-for-message {
+				color: rgb(188, 188, 188);
+				font-size: 12px;
+			}
+		}
+	}
+	// THIS IS FOR SCREEN WIDTHS THAT ARE ABOVE 768px
+
+	@media only screen and (min-width: 768px) {
+		.people-messaged {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 100%;
+			border-right: 2px solid #282a36;
+			padding: 20px;
+			gap: 10px;
+			max-width: 300px;
+			> div:nth-child(1) .message-person-photo {
+				border: 2px solid $Main_Pink;
+			}
+			> div:nth-child(2) .message-person-photo {
+				border: 2px solid $Main_Yellow;
+			}
+			> div:nth-child(3) .message-person-photo {
+				border: 2px solid $Main_Blue;
+			}
+			> div:nth-child(4) .message-person-photo {
+				border: 2px solid $Main_Green;
+			}
+
+			.individual-person-messaged {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 20px;
+				padding: 10px 20px;
+				border-radius: 15px;
+				width: 300px;
+				max-width: 90%;
+				cursor: pointer;
+				&:hover {
+					background-color: $Third_Grey;
+				}
+
+				.message-person-photo {
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					overflow: hidden;
+
+					img {
+						width: 50px;
+						height: 50px;
+						object-fit: cover;
+					}
+				}
+				.message-person-details {
+					.name {
+						font-weight: 500;
+						font-size: 1rem;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

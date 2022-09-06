@@ -1,6 +1,6 @@
 import React from 'react';
-import Metrics from '../../components/dasboardSections/Metrics';
-import UserInfo from '../../components/dasboardSections/MainPage/InfoSection';
+import Metrics from '../../components/dasboardSections/mainPage/Metrics';
+import UserInfo from '../../components/dasboardSections/mainPage/InfoSection';
 
 const FirstDash = () => {
 	return (

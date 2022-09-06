@@ -6,6 +6,8 @@ import LandingLayout from './components/layout/LandingLayout';
 // Pages
 import Landing from './views/Landing';
 import FirstDash from './views/dashboard/FirstDash';
+import Messages from './components/dasboardSections/messages/Messages';
+import GroupCategories from './components/dasboardSections/groups/GroupCategories';
 
 const App = () => {
 	return (
@@ -16,6 +18,8 @@ const App = () => {
 			</Route>
 			<Route path='/user/dashboard' element={<DashboardLayout />}>
 				<Route index element={<FirstDash />} />
+				<Route path='messages' element={<Messages />} />
+				<Route path='test' element={<GroupCategories />} />
 			</Route>
 		</Routes>
 	);
